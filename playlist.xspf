@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+  <title>Плейлист</title>
+	<trackList>
+		<track>
+			<location>http://172.19.1.10/control/faststream.jpg?stream=full&amp;needlength&amp;fps=12</location>
+			<title>Plato</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+				<vlc:option>ffmpeg-format=mxg</vlc:option>
+				<vlc:option>network-caching=12000</vlc:option>
+				<vlc:option>file-caching=3500</vlc:option>
+				<vlc:option>sout=#transcode{vcodec=FLV1,vb=950,fps=14,width=800,height=600}:gather:std{access=http{mime=video/x-flv},mux=ffmpeg{mux=flv},dst=172.17.6.97:8080/stream.flv}</vlc:option>
+				<vlc:option>stop-time=60</vlc:option>	
+			</extension>
+		</track>
+		<track>
+			<location>http://172.19.1.12/control/faststream.jpg?stream=full&amp;needlength&amp;fps=12</location>
+			<title>Zima</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>1</vlc:id>
+				<vlc:option>ffmpeg-format=mxg</vlc:option>
+				<vlc:option>network-caching=12000</vlc:option>
+				<vlc:option>file-caching=3500</vlc:option>
+				<vlc:option>sout=#transcode{vcodec=FLV1,vb=950,fps=14,width=800,height=600}:gather:std{access=http{mime=video/x-flv},mux=ffmpeg{mux=flv},dst=172.17.6.97:8080/stream.flv}</vlc:option>
+				<vlc:option>stop-time=60</vlc:option>
+			</extension>
+		</track>
+			<track>
+			<location>http://172.19.1.13/control/faststream.jpg?stream=full&amp;needlength&amp;fps=12</location>
+			<title>Rosa_1600</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>2</vlc:id>
+				<vlc:option>ffmpeg-format=mxg</vlc:option>
+				<vlc:option>network-caching=12000</vlc:option>
+				<vlc:option>file-caching=3500</vlc:option>
+				<vlc:option>sout=#transcode{vcodec=FLV1,vb=950,fps=14,width=800,height=600}:gather:std{access=http{mime=video/x-flv},mux=ffmpeg{mux=flv},dst=172.17.6.97:8080/stream.flv}</vlc:option>
+				<vlc:option>stop-time=60</vlc:option>	
+			</extension>
+		</track>
+				<track>
+			<location>http://172.19.1.11/control/faststream.jpg?stream=full&amp;needlength&amp;fps=12</location>
+			<title>Post_2100</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>3</vlc:id>
+				<vlc:option>ffmpeg-format=mxg</vlc:option>
+				<vlc:option>network-caching=12000</vlc:option>
+				<vlc:option>file-caching=3500</vlc:option>
+				<vlc:option>sout=#transcode{vcodec=FLV1,vb=950,fps=14,width=800,height=600}:gather:std{access=http{mime=video/x-flv},mux=ffmpeg{mux=flv},dst=172.17.6.97:8080/stream.flv}</vlc:option>
+				<vlc:option>stop-time=60</vlc:option>	
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+			<vlc:item tid="0"/>
+			<vlc:item tid="1"/>
+			<vlc:item tid="2"/>
+			<vlc:item tid="3"/>
+	</extension>
+</playlist>
