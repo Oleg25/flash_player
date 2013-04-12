@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videos>
+				<link url='http://172.17.6.97:8080/stream.flv' tit='Ресторан Зима' temp='+11' wind='N 3' tr='+11' wr='S 4' snow='0 /0' img='Sun' />		  	
+			    <link url='http://172.17.6.97:8080/stream.flv' tit='Роза 1600' temp='+11' wind='S 4' snow='59 /149' img='Sun' />
+				<link url='http://172.17.6.97:8080/stream.flv' tit='Плато' temp='+11' wind='N 3' snow='0 /0' img='Sun' />                			
+			    </videos>
